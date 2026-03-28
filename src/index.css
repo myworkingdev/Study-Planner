@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #4653c3;
+  --color-primary-container: #7784f7;
+  --color-on-primary: #fbf8ff;
+  
+  --color-secondary: #6e49b6;
+  --color-secondary-container: #eaddff;
+  --color-on-secondary: #fdf7ff;
+
+  --color-tertiary: #765377;
+  --color-tertiary-container: #fed2fd;
+
+  --color-surface: #f7fafc;
+  --color-on-surface: #2b3437;
+  --color-on-surface-variant: #576064;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4f7;
+  --color-surface-container: #e8eff2;
+  --color-surface-container-high: #e2e9ed;
+  --color-surface-container-highest: #dbe4e8;
+
+  --color-outline: #737c80;
+  --color-outline-variant: #aab3b7;
+
+  --color-error: #a8364b;
+  --color-error-container: #f97386;
+
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-4xl: 2.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-md;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
